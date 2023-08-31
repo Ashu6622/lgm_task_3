@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 20px;
+  width: 100%;
+}
+header h1 {
+  text-align: center;
+  font-size: calc(1.2vw + 16px);
+}
+
+.container {
+  margin-top: 30px;
+  width: 100%;
+}
+.container .data-container {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  width: 100%;
+}
+
+.student-info {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 480px;
+  min-width: 385px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+form {
+  padding: 20px;
+  width: 385px;
+}
+form div {
+  margin: 10px 0px;
+}
+form div label {
+  margin-right: 50px;
+}
+form div .span1 {
+  margin-left: 33px;
+}
+form div .span2 {
+  margin-left: 49px;
+}
+form div input {
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+}
+form .buttons {
+  margin-top: 20px;
+}
+form .btn {
+  padding: 7px 30px;
+  font-size: 1rem;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+form .btn1:hover {
+  background-color: #50f394;
+}
+form .btn2:hover {
+  background-color: #ff8838;
+}
+form .btn1 {
+  background-color: #2ecc71;
+}
+form .btn2 {
+  background-color: #d35400;
+}
+
+#stdname {
+  margin-left: 38px;
+}
+
+#stdmail {
+  margin-left: 40px;
+}
+
+#stdphone {
+  margin-left: 28px;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#imagelink {
+  margin-left: 3px;
+}
+
+#gender {
+  display: flex;
+  margin-top: 30px;
+}
+
+#skill {
+  display: flex;
+  margin-top: 30px;
+}
+
+.display-info {
+  padding: 10px;
+  max-width: 1050px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.display-info .info-card {
+  padding: 5px;
+  width: 370px;
+  height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.display-info .info-card .card-head {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: 1px solid silver;
+}
+.display-info .info-card .card-head h3 {
+  text-align: left;
+}
+.display-info .info-card .card-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid silver;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.display-info .info-card .card-bottom .std-details {
+  border-right: 1px solid silver;
+}
+.display-info .info-card .card-bottom h3 {
+  margin-bottom: 10px;
+}
+.display-info .info-card .card-bottom p {
+  margin-bottom: 5px;
+}
+.display-info .info-card .card-bottom a {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.display-info .info-card .card-bottom .std-image {
+  width: 130px;
+  height: 133px;
+}
+.display-info .info-card .card-bottom .std-image img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 450px) {
+  .student-info {
+    width: 330px;
+  }
+}
+@media (max-width: 850px) {
+  .container .data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .display-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+  }
+  .display-info .info-card {
+    width: 370px;
+    margin: auto;
+  }
+  .student-info {
+    width: 385px;
+    margin: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

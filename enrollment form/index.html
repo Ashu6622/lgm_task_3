@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Enrollment Form</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="data-container">
+
+            <div class="student-info">
+
+                <form>
+
+                    <div>
+                        <label for="stdname">Name</label>
+                        <input type="text" id="stdname" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="stdmail">Email</label>
+                        <input type="email" id="stdmail" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="stdphone">Ph NO.</label>
+                        <input type="number" id="stdphone" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="stdimage">Image Link</label>
+                        <input type="file" id="filelink" hidden>
+                        <input type="input" id="imagelink" placeholder="Choose file">
+                    </div>
+                    <div>
+                        <label for="stdlink">Github Link</label>
+                        <input type="text" id="stdlink" autocomplete="off">
+                    </div>
+                    <div id="gender">
+                        <label>Gender</label>
+                        <span class="span1">
+                            <input type="radio" id="Male" class="sex" name="gender">
+                            <label for="Male">Male</label>
+                            <br>
+                            <input type="radio" id="Female" class="sex" name="gender">
+                            <label for="Female">Female</label>
+                            <br>
+                            <input type="radio" id="Other" class="sex" name="gender">
+                            <label for="Other">Other</label>
+                        </span>
+                    </div>
+                    <div id="skill">
+                        <label>Skills</label>
+                        <span class="span2">
+                            <input type="radio" id="Html" class="lang">
+                            <label for="Html">HTML</label>
+                            <br>
+                            <input type="radio" id="Css" class="lang">
+                            <label for="Css">CSS</label>
+                            <br>
+                            <input type="radio" id="JavaScript" class="lang">
+                            <label for="JavaScript">JavaScript</label>
+                        </span>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="button" class="btn btn1">Enroll</button>
+                        <button type="button" class="btn btn2">Clear</button>
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="display-info">
+
+             
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
